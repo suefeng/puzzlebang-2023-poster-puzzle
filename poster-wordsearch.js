@@ -6,4 +6,4 @@ puzzle_array.forEach((letter) => {
   const span = document.createElement('span');
   grid.appendChild(span);
   span.innerHTML = letter;
-})
+});
