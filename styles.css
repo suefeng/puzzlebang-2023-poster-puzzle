@@ -1,0 +1,92 @@
+:root {
+      --dialog-background: rgb(203, 232, 241);
+      --shadow: rgba(0, 0, 0, .3);
+    }
+    html {
+      min-height: 100%;
+    }
+    body {
+      padding: 4vw 5vw;
+      min-height: 100%;
+      position: relative;
+      background-color: skyblue;
+      font-family: 'Libre Bodoni';
+      color: #333;
+    }
+    u {
+      color: #000;
+      font-weight: 700;
+    }
+    h1 {
+      margin: 0 0 1rem;
+    }
+    code {
+      font-family: 'Roboto Mono';
+      font-weight: 700;
+      color: #000;
+    }
+    small {
+      font-size: calc(14px + .5vw);
+      vertical-align: middle;
+    }
+    .npc-grid {
+      display: grid;
+      grid-template-columns: 20vw auto;
+      gap: 3vw;
+      margin-bottom: 2vw;
+      text-align: left;
+      position: relative;
+      width: 100%;
+    }
+    .npc-grid .pirate {
+      align-self: top;
+    }
+    .box {
+      position: relative;
+      box-shadow: 3px 3px 10px var(--shadow);
+      background-color: var(--dialog-background);
+      border-radius: 1vw;
+      box-sizing: border-box;
+      border: 2px solid #aaa;
+    }
+    .dialog {
+      font-size: calc(12px + .5vw);
+      line-height: 1.5;
+      padding: 1.5vw;
+      background-color: white;
+    }
+    .dialog-pointer {
+      width: 3.8vw;
+      height: 3.5vw;
+      position: absolute;
+      left: -3.8vw;
+      top: 6vw;
+    }
+    .ship {
+      float: right;
+      width: 20vw;
+      padding-left: 1.5vw;
+    }
+    .puzzle-container {
+      width: 70vw;
+      margin: 4vw auto 0;
+    }
+    #grid {
+      display: grid;
+      gap: 1vw;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Source Code Pro';
+      font-size: calc(16px + .5vw);
+      line-height: 1;
+      width: 70vw;
+      height: 70vw;
+      text-align: center;
+      padding: 2vw;
+      margin: 2vw auto;
+    }
+    .puzzle-location {
+      font-size: calc(12px + .5vw);
+    }
