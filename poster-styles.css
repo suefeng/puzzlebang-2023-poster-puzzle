@@ -6,7 +6,7 @@ html {
   min-height: 100%;
 }
 body {
-  padding: 4vw 5vw;
+  padding: 3vw 5vw;
   min-height: 100%;
   position: relative;
   background-color: skyblue;
@@ -19,34 +19,31 @@ u {
 }
 h1 {
   margin: 0;
+  font-size: calc(25px + .5vw);
 }
 code {
   font-family: 'Roboto Mono';
   font-weight: 700;
 }
-small {
+h1 small {
+  font-size: calc(12px + .5vw);
+  display: block;
+}
+.qr-code {
+  text-align: center;
   font-size: calc(14px + .5vw);
-  vertical-align: middle;
 }
-.npc-grid {
-  display: grid;
-  grid-template-columns: 20vw auto;
-  gap: 3vw;
-  margin-bottom: 2vw;
-  text-align: left;
-  position: relative;
-  width: 100%;
-}
-.npc-grid .pirate {
-  align-self: top;
+.qr-code img {
+  border-radius: 1vw;
+  border: 2px solid #a53232;
 }
 .box {
   position: relative;
-  box-shadow: 3px 3px 10px var(--shadow);
+  box-shadow: 5px 5px 0 var(--shadow);
   background-color: var(--dialog-background);
   border-radius: 1vw;
   box-sizing: border-box;
-  border: 2px solid #aaa;
+  border: 2px solid #a53232;
 }
 .dialog {
   font-size: calc(12px + .5vw);
@@ -54,15 +51,75 @@ small {
   padding: 1.5vw;
 }
 .dialog-pointer {
-  width: 3.5vw;
+  width: 2vw;
+  left: -2vw;
+  top: 0;
+}
+.puzzle-container {
+  position: relative;
+  padding: .5vw 11vw 24vw;
+  height: 65vw;
+  margin-bottom: 4vw;
+}
+.puzzle-container img:not(.skull) {
   position: absolute;
-  left: -3.5vw;
-  top: 4vw;
+}
+.npc {
+  top: -8vw;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 25vw;
+  position: absolute;
+}
+.ahoy {
+  background: white;
+  display: inline-block;
+  top: 3vw;
+  margin-left: 3vw;
+  position: absolute;
+  white-space: nowrap;
+}
+.skull {
+  width: 16vw;
+  position: relative;
+  display: inline-block;
+}
+.pegleg {
+  bottom: 0;
+  left: 0;
+  width: 15vw;
+}
+.rum {
+  top: 0;
+  left: 1vw;
+  width: 12vw;
+  transform: rotate(-5deg);
+}
+.parrot {
+  top: -1vw;
+  right: 0;
+  width: 20vw;
+}
+.treasure {
+  width: 22vw;
+  bottom: 0;
+  left: 0;
+  right: 15vw;
+  margin: auto;
+}
+.gold {
+  width: 15vw;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transform: rotate(20deg);
 }
 .ship {
-  float: right;
-  width: 20vw;
-  padding-left: 1.5vw;
+  bottom: 0;
+  right: 0;
+  width: 30vw;
 }
 #grid {
   display: grid;
@@ -74,21 +131,26 @@ small {
   font-family: 'Source Code Pro';
   font-size: calc(16px + .5vw);
   line-height: 1;
-  width: 65vw;
-  height: 65vw;
+  width: 100%;
+  height: 100%;
   text-align: center;
   padding: 2vw;
-  margin: 4vw auto 0;
+  margin: 5vw auto;
 }
 .puzzle-location {
-  font-size: calc(12px + .5vw);
+  font-size: calc(10px + .5vw);
   display: grid;
   gap: 2vw;
-  grid-template-columns: 1fr 11vw;
+  grid-template-columns: 20vw 1fr 15vw;
   align-items: center;
-  margin-bottom: 4vw;
+  margin-bottom: 5vw;
 }
 .info p {
+  font-size: calc(14px + .5vw);
   margin: 0;
   line-height: 1.5;
+}
+.signup {
+  font-size: calc(12px + .5vw);
+  text-align: center;
 }

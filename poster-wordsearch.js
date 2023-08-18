@@ -1,5 +1,5 @@
 const grid = document.getElementById('grid');
-const puzzle_string = 'PCAESASREAHOYNCKODREPDPTUHIRSLPEALSSOWAOGOLDRTDNELIGHTTIKMEESJWIZLQGVRUMOTREASURE';
+const puzzle_string = 'PCAESASREAHOYNCKORRDPEPDUTURHLIESLPMOAASGOLDSTWNOLRDEIGHKTETIMESJWIGZLQVOTREASURE';
 const puzzle_array = puzzle_string.split('');
 
 puzzle_array.forEach((letter) => {
