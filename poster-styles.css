@@ -83,15 +83,7 @@ h1 small {
   display: inline-block;
   position: absolute;
   width: 15vw;
-  top: 8vw;
-}
-@media (min-width: 600px) {
-  .ahoy {
-    top: 9vw;
-  }
-  /* .dialog-pointer {
-    top: 3vw;
-  } */
+  top: 8.5vw;
 }
 
 .puzzle-container {
